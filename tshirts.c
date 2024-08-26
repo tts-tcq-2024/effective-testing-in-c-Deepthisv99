@@ -15,7 +15,9 @@ char size(int cms) {
 
 int main() {
     assert(size(37) == 'S');
+    assert(size(38) == 'S');  // This test should fail, because 38 is not covered correctly
     assert(size(40) == 'M');
+    assert(size(42) == 'M');  // This test should fail, because 42 is not covered correctly
     assert(size(43) == 'L');
     printf("All is well (maybe!)\n");
     return 0;
